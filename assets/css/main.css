@@ -25,6 +25,17 @@
     position: relative;
 }
 
+.btn.bordered {
+    box-shadow: inset 0px 0px 0px 3px #fff;
+}
+
+.icon-shadow {
+    box-shadow: 0px 0px 4px 1px #a3b849;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
 .yellow-gradient{
     background: #fcfce7;
     background: -moz-linear-gradient(top, #fcfce7 0%, #ffffff 50%, #ffffff 100%); 
@@ -34,6 +45,12 @@
 
 .img-shadow {
     box-shadow: 0px 3px 6px 0px #b7b7b7;
+}
+
+.form-control {
+    height: calc(2.36em + .75rem + 2px);
+    box-shadow: inset 0px 0px 0px 3px #ACA9A9;
+    border: none;
 }
 
 /*ОСНОВНОЙ ТЕКСТ НА САЙТЕ*/
@@ -145,6 +162,10 @@ p, span{
     background-image: url(../img/banner2.png);
 }
 
+.feedback:after{
+    background-image: url(../img/banner3.png);
+}
+
 .banner:after{
     content: "";
     position: absolute;
@@ -154,6 +175,10 @@ p, span{
     height: 100%;
     z-index: -2;
     background-size: cover;
+}
+
+.no-banner-shadow:before{
+    display: none;
 }
 
 .banner p{

@@ -186,7 +186,7 @@ p, span{
 
 .products .item{
     position: relative;
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
 .products .item span{
@@ -203,7 +203,87 @@ p, span{
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%); 
 }
 
-/*OFFER*/
+/*ПОЧЕМУ МЫ*/
+
+.text-bg{
+    background: url(../img/text-bg.jpg);
+}
+
+#plateHolder{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#plateHolder h1, 
+#plateHolder .icons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);  
+}
+
+#plateHolder .icons img{
+    position: absolute;
+}
+
+#plateHolder .icons img:nth-child(1){
+    transform: translate(-164px, -255px);
+    -webkit-transform: translate(-164px, -255px);
+}
+
+#plateHolder .icons img:nth-child(2){
+    transform: translate(30px, -285px);
+    -webkit-transform: translate(30px, -285px);
+    width: 60px;
+}
+
+#plateHolder .icons img:nth-child(3){
+    transform: translate(174px, -185px);
+    -webkit-transform: translate(174px, -185px);
+    width: 82px;
+}
+
+#plateHolder .icons img:nth-child(4){
+    transform: translate(221px, 65px);
+    -webkit-transform: translate(221px, 65px);
+    width: 51px;
+}
+
+#plateHolder .icons img:nth-child(5){
+    transform: translate(48px, 210px);
+    -webkit-transform: translate(48px, 210px);
+    width: 70px;
+}
+
+#plateHolder .icons img:nth-child(6){
+    transform: translate(-164px, 185px);
+    -webkit-transform: translate(-164px, 185px);
+    width: 82px;
+}
+
+#plateHolder .icons img:nth-child(7){
+    transform: translate(-284px, 35px);
+    -webkit-transform: translate(-284px, 35px);
+    width: 64px;
+}
+
+#plateHolder .icons img:nth-child(8){
+    transform: translate(-270px, -144px);
+    -webkit-transform: translate(-266px, -144px);
+    width: 53px;
+}
+
+#plateHolder h1{
+    text-align: center;
+    width: 590px;
+    max-width: 100%;
+    font-size: 50px;
+}
+
+/*ПРЕДЛОЖЕНИЕ*/
 
 .card-frame{
     border: 3px solid #A3B849;

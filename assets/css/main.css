@@ -50,6 +50,11 @@ p, span{
     font-size: 75px;
 }
 
+.section h1,
+.section .h1{
+    font-size: 50px;
+}
+
 .h2, h2 {
     font-size: 40px;
 }
@@ -134,6 +139,10 @@ p, span{
 
 .food:after{
     background-image: url(../img/banner.jpg);
+}
+
+.canape:after{
+    background-image: url(../img/banner2.png);
 }
 
 .banner:after{

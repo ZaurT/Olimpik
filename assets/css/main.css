@@ -1,0 +1,193 @@
+/*ШРИФТЫ*/
+
+@font-face{
+    font-family: "Alice-Regular";
+    src: url(../fonts/Alice-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Merriweather-Regular";
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Merriweather-Bold";
+    src: url(../fonts/Merriweather-Bold.ttf);
+}
+
+/*ОСНОВНЫе СТИЛИ*/
+
+.section{
+    padding: 100px 0px;
+}
+
+.section, .section .container{
+    position: relative;
+}
+
+.yellow-gradient{
+    background: #fcfce7;
+    background: -moz-linear-gradient(top, #fcfce7 0%, #ffffff 50%, #ffffff 100%); 
+    background: -webkit-linear-gradient(top, #fcfce7 0%,#ffffff 50%, #ffffff 100%); 
+    background: linear-gradient(to bottom, #fcfce7 0%,#ffffff 50%, #ffffff 100%); 
+}
+
+.img-shadow {
+    box-shadow: 0px 3px 6px 0px #b7b7b7;
+}
+
+/*ОСНОВНОЙ ТЕКСТ НА САЙТЕ*/
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Alice-Regular";
+}
+
+p, span{
+    font-family: "Merriweather-Regular";
+}
+
+.h1, h1 {
+    font-size: 75px;
+}
+
+.h2, h2 {
+    font-size: 40px;
+}
+
+.text{
+    font-size: 20px;
+}
+
+/*КАВЫЧКИ*/
+
+.quotes:before{
+    content:'«‎';
+}
+.quotes:after{
+    content:'»‎';
+}
+
+
+/*КНОПКИ*/
+
+.btn {
+    font-family: "Merriweather-Bold";
+    font-size: 20px;
+    padding: 16px 41px;
+    line-height: 1;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-light {
+    background: transparent;
+    color: #A3B849;
+    box-shadow: inset 0px 0px 0px 3px #A3B849;
+    border: none;
+}
+
+.btn-light:hover{
+    color: #fff;
+    background: #A3B849;
+}
+
+.btn-success{
+    background: #A3B849;
+    color: #fff;
+}
+
+.btn-success:hover{
+    background: #b2c758;
+}
+
+/*НАВИГАЦИЯ*/
+
+.navbar-nav .nav-link{
+    font-family: "Merriweather-Regular";
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    line-height: 1.8;
+    color: #fff;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*БАННЕР*/
+
+.banner{
+    position: relative;
+}
+
+.banner:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.food:after{
+    background-image: url(../img/banner.jpg);
+}
+
+.banner:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: cover;
+}
+
+.banner p{
+    font-size: 24px;
+}
+
+/*ПРОДУКТЫ*/
+
+.products .container{
+    background: url(../img/products1.jpg) no-repeat top left;
+    min-height: 400px;
+}
+
+.products .container:before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0px;
+    width: 556px;
+    height: 535px;
+    background: url(../img/products2.jpg);
+}
+
+.products .container:after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    width: 249px;
+    height: 249px;
+    background: url(../img/products3.png);
+}
+
+@media (min-width: 1640px){
+    .container{
+        max-width: 1640px;
+    }
+}
+
+@media (min-width: 1200px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.4rem;
+        padding-left: 1.4rem;
+        font-size: 20px;
+    }
+}

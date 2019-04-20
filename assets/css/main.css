@@ -18,7 +18,7 @@
 /*ОСНОВНЫе СТИЛИ*/
 
 .section{
-    padding: 100px 0px;
+    padding: 140px 0px;
 }
 
 .section, .section .container{
@@ -151,18 +151,23 @@ p, span{
     font-size: 24px;
 }
 
+.banner span{
+    font-size: 18px;
+}
+
 /*ПРОДУКТЫ*/
 
 .products .container{
-    background: url(../img/products1.jpg) no-repeat top left;
+    background: url(../img/products1.jpg) no-repeat;
     min-height: 400px;
+    background-position: 0px -36px;
 }
 
 .products .container:before{
     content: "";
     position: absolute;
-    left: -20px;
-    bottom: 0px;
+    left: -200px;
+    bottom: -180px;
     width: 556px;
     height: 535px;
     background: url(../img/products2.jpg);
@@ -171,11 +176,31 @@ p, span{
 .products .container:after{
     content: "";
     position: absolute;
-    right: -20px;
-    top: 0px;
+    right: -103px;
+    top: -11px;
     width: 249px;
     height: 249px;
     background: url(../img/products3.png);
+    z-index: -1;
+}
+
+.products .item{
+    position: relative;
+    margin: 20px 0;
+}
+
+.products .item span{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18px;
+    color: #000;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.99) 99%, rgba(255,255,255,1) 100%); 
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%); 
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%); 
 }
 
 @media (min-width: 1640px){

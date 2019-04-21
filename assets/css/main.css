@@ -17,6 +17,10 @@
 
 /*ОСНОВНЫе СТИЛИ*/
 
+.mh-100vh{
+    min-height: 100vh;
+}
+
 .section{
     padding: 140px 0px;
 }
@@ -193,8 +197,8 @@ p, span{
 
 .products .container{
     background: url(../img/products1.jpg) no-repeat;
-    min-height: 400px;
     background-position: 0px -36px;
+    background-size: 50%;
 }
 
 .products .container:before{
@@ -243,13 +247,6 @@ p, span{
     background: url(../img/text-bg.jpg);
 }
 
-#plateHolder{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-}
-
 #plateHolder h1, 
 #plateHolder .icons{
     position: absolute;
@@ -264,49 +261,50 @@ p, span{
 }
 
 #plateHolder .icons img:nth-child(1){
-    transform: translate(-164px, -255px);
-    -webkit-transform: translate(-164px, -255px);
+    transform: translate(-132px, -221px);
+    -webkit-transform: translate(-132px, -221px);
+    width: 62px;
 }
 
 #plateHolder .icons img:nth-child(2){
-    transform: translate(30px, -285px);
-    -webkit-transform: translate(30px, -285px);
+    transform: translate(20px, -245px);
+    -webkit-transform: translate(20px, -245px);
     width: 60px;
 }
 
 #plateHolder .icons img:nth-child(3){
-    transform: translate(174px, -185px);
-    -webkit-transform: translate(174px, -185px);
+    transform: translate(144px, -175px);
+    -webkit-transform: translate(144px, -175px);
     width: 82px;
 }
 
 #plateHolder .icons img:nth-child(4){
-    transform: translate(221px, 65px);
-    -webkit-transform: translate(221px, 65px);
+    transform: translate(181px, 65px);
+    -webkit-transform: translate(181px, 65px);
     width: 51px;
 }
 
 #plateHolder .icons img:nth-child(5){
-    transform: translate(48px, 210px);
-    -webkit-transform: translate(48px, 210px);
+    transform: translate(48px, 180px);
+    -webkit-transform: translate(48px, 180px);
     width: 70px;
 }
 
 #plateHolder .icons img:nth-child(6){
-    transform: translate(-164px, 185px);
-    -webkit-transform: translate(-164px, 185px);
+    transform: translate(-144px, 155px);
+    -webkit-transform: translate(-144px, 155px);
     width: 82px;
 }
 
 #plateHolder .icons img:nth-child(7){
-    transform: translate(-284px, 35px);
-    -webkit-transform: translate(-284px, 35px);
+    transform: translate(-254px, 35px);
+    -webkit-transform: translate(-254px, 35px);
     width: 64px;
 }
 
 #plateHolder .icons img:nth-child(8){
-    transform: translate(-270px, -144px);
-    -webkit-transform: translate(-266px, -144px);
+    transform: translate(-226px, -129px);
+    -webkit-transform: translate(-226px, -129px);
     width: 53px;
 }
 
@@ -350,18 +348,117 @@ p, span{
     .container{
         max-width: 1640px;
     }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.4rem;
+        padding-left: 1.4rem;
+    }
+
+    .btn,
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: 20px;
+    }
+
+    .h1, h1 {
+        font-size: 75px;
+    }
+
+    .banner p {
+        font-size: 24px;
+    }
+
+    .banner span{
+        font-size: 18px;
+    }
+
+    a.navbar-brand img {
+        width: 111px !important;
+    }
+}
+
+@media (max-width: 1200px){
+    #whyUs .row, #whyUs [class*="col"] {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
 }
 
 @media (min-width: 1200px){
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1.4rem;
-        padding-left: 1.4rem;
-        font-size: 20px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .section.products {
+        overflow: hidden;
+    }
+
+    .position-absolute-lg{
+        position: absolute !important;
+    }
+
+    #plateHolder{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    .card-frame{
+        max-width: 70%;
     }
 }
 
-@media (min-width: 992px){
-    .card-frame{
-        max-width: 70%;
+
+@media (min-width: 650px){
+
+    .banner.food .float-left,
+    .banner.food .float-right{
+        width: auto !important;
+    }
+
+    .banner-contacts .float-left, .banner-contacts .float-right {
+        margin-bottom: 3rem!important;
+    }
+}
+
+@media (min-width: 300px){
+    .banner.food .float-left,
+    .banner.food .float-right{
+        width: 100%;
+        display:block;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link, 
+    .btn, .banner p,
+    .banner span{
+        font-size: 15px;
+    }
+
+    .h1, h1 {
+        font-size: 40px;
+    }
+
+    a.navbar-brand img {
+        width: 80px !important;
+    }
+
+    .banner-contacts .float-left, 
+    .banner-contacts .float-right {
+        margin-bottom: 8px !important;
+    }
+
+    .section.products {
+        overflow: hidden;
+    }
+
+    #plateHolder{
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    #plateHolder img {
+        width: 100%;
     }
 }

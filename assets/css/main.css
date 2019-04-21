@@ -405,7 +405,7 @@ p, span{
     }
 
     #plateHolder h1.hidden{
-        font-size: 0;
+        font-size: 0 !important; 
     }
 
     #whyUs [data-target*='data']{

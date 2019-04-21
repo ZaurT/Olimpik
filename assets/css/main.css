@@ -365,11 +365,11 @@ p, span{
     }
 
     .h1, h1 {
-        font-size: 75px;
+        font-size: 75px !important;
     }
 
     .banner p {
-        font-size: 24px;
+        font-size: 24px !important;
     }
 
     .banner span{

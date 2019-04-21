@@ -422,6 +422,13 @@ p, span{
     }
 }
 
+@media (max-width: 500px){
+    .contact-holder a,
+    .contact-holder span{
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 300px){
     .banner.food .float-left,
     .banner.food .float-right{

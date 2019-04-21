@@ -313,6 +313,7 @@ p, span{
     width: 590px;
     max-width: 100%;
     font-size: 50px;
+    transition: 0.5s;
 }
 
 /*ПРЕДЛОЖЕНИЕ*/
@@ -345,6 +346,10 @@ p, span{
 }
 
 @media (min-width: 1640px){
+    div#plateHolder img {
+        width: 90%;
+    }
+
     .container{
         max-width: 1640px;
     }
@@ -384,6 +389,49 @@ p, span{
 }
 
 @media (min-width: 1200px){
+
+
+    /*АНИМАЦИЯ*/
+
+    #plateHolder>img {
+        transition: 0.5s;
+    }
+
+
+
+    #whyUs [data-target*='data'],
+    #plateHolder .icons img {
+        cursor: pointer;
+    }
+
+    #plateHolder h1.hidden{
+        font-size: 0;
+    }
+
+    #whyUs [data-target*='data']{
+        transition: 0.5s;
+    }
+
+    #whyUs.active [data-target*='data'] {
+        opacity: 0.4;
+    }
+
+    #whyUs.active [data-target*='data'].active {
+        opacity: 1;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+
+    #plateHolder .icons img {
+        transition: 0.5s;
+    }
+
+    #plateHolder .icons img.active {
+        transform: translate(-50%,-50%) scale(2) rotate(360deg);
+        -webkit-transform: translate(-50%,-50%) scale(3) rotate(360deg);
+        ;
+    }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
@@ -440,6 +488,14 @@ p, span{
     .btn, .banner p,
     .banner span{
         font-size: 15px;
+    }
+
+    .navbar-dark .navbar-nav a, .navbar-dark .navbar-nav .nav-item {
+        text-align: right !important;
+    }
+
+    .navbar-toggler{
+        outline: none !important;
     }
 
     .h1, h1 {
